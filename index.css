@@ -1,0 +1,166 @@
+/* ---------------- Reset ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------------- Body ---------------- */
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab); 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* ---------------- Main Container ---------------- */
+#bg {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    padding: 30px 40px;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* ---------------- Instructions Container ---------------- */
+#instructions-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 6px solid #ff6b6b; 
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+#instructions-container h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #ff6b6b;
+}
+
+/* ---------------- Question Container ---------------- */
+#question-container {
+    display: none;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+#question-container h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ffd93d; 
+}
+
+/* ---------------- Timer ---------------- */
+#timer {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4ee2ec; 
+}
+
+/* ---------------- Option Buttons ---------------- */
+.opt {
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+    padding: 14px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #6a11cb; 
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+
+.opt:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.opt:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* ---------------- Result Container ---------------- */
+#result-container {
+    display: none;
+    text-align: center;
+    padding: 25px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    margin: 25px;
+}
+
+#result-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4ee2ec; 
+}
+
+/* ---------------- Start / Next Button ---------------- */
+#btn {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6b6b, #fddb92); 
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+#btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+    #bg {
+        padding: 20px;
+    }
+
+    .opt {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    #question-container h1 {
+        font-size: 22px;
+    }
+
+    #instructions-container h1 {
+        font-size: 22px;
+    }
+
+    #btn {
+        width: 140px;
+        font-size: 16px;
+    }
+
+    #timer {
+        font-size: 20px;
+    }
+}
